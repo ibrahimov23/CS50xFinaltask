@@ -1,0 +1,3 @@
+Salam mən Baba İbrahimov. CS50x Final Layihəni təqdim edirəm bir çox problemlərin ardından(4 gün qala bütün kodlarımın silinməsi və s.)
+Fikirimdə daha yaxşı bir şeylər var idi Ətir satışı saytı təqdim edəcəkdimş Bizə blog sayt yığmağı demişdilər məndə səhifədə yorumları blog olaraq fikirləşmişdim 
+hansıkı istifadəçi yeni yorum əlavə edə və dəyişiklik edib silədə bilərdi amma sonda problem olduğuna görə əlimdən gələni etdim.
