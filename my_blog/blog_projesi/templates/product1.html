@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Parfume Shop</title>
+    <link rel="stylesheet" href="{% static 'css/products.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'img/logo.png' %}" alt="Logo of this website">
+            <h1>Parfume Shop</h1>
+        </div>
+        <div class="login_register">
+            <h3 class="login"><a href="">Login</a></h3>
+            <h3 class="register"><a href=""> Register</a></h3>
+        </div>
+    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html"> Home Page</a></li>
+            <li><a href="./index.html#products">Products</a></li>
+            <li><a href="#footer">Contacts</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="catacories">
+            <ul>
+                <li><a href="./product1.html">Christian Dior</a></li>
+                <li><a href="./product2.html" target="_blank">Kilian</a></li>
+                <li><a href="./product3.html" target="_blank">Amouage</a></li>
+                <li><a href="./product4.html" target="_blank">Attar</a></li>
+                <li><a href="./product5.html" target="_blank">Burbery</a></li>
+                <li><a href="./product6.html" target="_blank">Bvlgari</a></li>
+                <li><a href="./product7.html" target="_blank">Carolina Herrera</a></li>
+                <li><a href="./product8.html" target="_blank">Chanel</a></li>
+                <li><a href="./product9.html" target="_blank">Dolce Gabanna</a></li>
+                <li><a href="./product10.html" target="_blank">Lancome</a></li>
+                <li><a href="./product11.html" target="_blank">Louis Vuitton</a></li>
+                <li><a href="./product12.html" target="_blank">Mancera</a></li>
+            </ul>
+        </div>
+        <div class="search-area">
+            <input type="text" placeholder="🔎 search here">
+        </div>
+        <div class="products">
+            <div class="box-img">
+                <div class="img">
+                    <img src="./img/product1.jpg" alt="">
+                </div>
+            </div>
+            <div class="box-text">
+                <div>
+                    <div class="name">
+                        <h2>Christian Dior</h2>
+                    </div>
+                    <div class="about">
+                        <h3>Christian Dior | Hypnotic Poison EAU de parfum</h3>
+                        <h4>Price | $24.00</h4>
+                        <h5>Available ✔</h5>
+                        <p>Parfums Christian Dior is the perfumery and cosmetics (makeup and skincare) line of the
+                            French fashion house, Christian Dior SE. However, the line belongs to the perfumes and
+                            cosmetics portfolio of the world's largest luxury group, the LVMH Group. Nevertheless,
+                            both Christian Dior SE and LVMH are headed by chairman Bernard Arnault, and Christian Dior
+                            SE is the major shareholder of LVMH.
+                        </p>
+                        <br>
+                        <h5>
+                            free delivery to subways ✔
+                        </h5> <br>
+                        <h5>
+                            Delivery by courier ✔
+                        </h5>
+                    </div>
+                </div>
+                <div>
+                    <div class="add-blog">
+                        <h2><a href="">+ Add new comment</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-title">
+            <h3>Comments</h3>
+        </div>
+        <div class="blogs">
+            <div class="blog">
+                <div class="title">
+                    <h3>
+                        My first Title
+                    </h3>
+                </div>
+                <div class="body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus fuga minus commodi
+                        vitae obcaecati, repudiandae nesciunt ab illum! Enim?</p>
+                </div>
+                <div class="author">
+                    <h5>Author | user</h5>
+                </div>
+                <br>
+                <div class="edit-delete">
+                    <p><a href="">edit-blog</a></p>
+                    <p><a href="">delete blog</a></p>
+                </div>
+
+            </div>
+            <div class="blog">
+                <div class="title">
+                    <h3>
+                        My first Title
+                    </h3>
+                </div>
+                <div class="body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus fuga minus commodi
+                        vitae obcaecati, repudiandae nesciunt ab illum! Enim?</p>
+                </div>
+                <div class="author">
+                    <h5>Author | user</h5>
+                </div>
+                <br>
+                <div class="edit-delete">
+                    <p><a href="">edit-blog</a></p>
+                    <p><a href="">delete blog</a></p>
+                </div>
+
+            </div>
+            <div class="blog">
+                <div class="title">
+                    <h3>
+                        My first Title
+                    </h3>
+                </div>
+                <div class="body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus fuga minus commodi
+                        vitae obcaecati, repudiandae nesciunt ab illum! Enim? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quam, modi.</p>
+                </div>
+                <div class="author">
+                    <h5>Author | user</h5>
+                </div>
+                <br>
+                <div>
+                    <div class="edit-delete">
+                        <p><a href="">edit-blog</a></p>
+                        <p><a href="">delete blog</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="name">
+                <h3>Parfume Shop</h3>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href=""><img src="{% static 'img/facebook.webp' %}" alt="facebook-logo"></a></li>
+                    <li><a href="https:/www.instagram.com/reos_parfum" target="_blank"><img src="{% static 'img/instagram.png' %}" alt="instagram-logo"></a></li>
+                    <li><a href=""><img src="{% static 'img/twitter.jpg' %}" alt="twitter-logo"></a></li>
+                    <li><a href=""><img src="{% static 'img/gmail.png' %}" alt="gmail-logo"></a></li>
+                </ul>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    margin-top: 150px;
+    background-color: black;
+}
+
+.footer h3 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer .social {
+    display: flex;
+}
+
+.footer .social ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer .social a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer .social img {
+    width: 30px;
+}

@@ -1,0 +1,12 @@
+.blogs {
+    width: 100%;
+}
+
+.products .container .box {
+    width: 44%;
+}
+
+.products .container .box .box-img {
+    text-align: center;    
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% comment %} <link rel="stylesheet" href="{% static 'css/post_detail.css' %}"> {% endcomment %}
+</head>
+<body>
+    <header id="home">
+        <div class="logo">
+            {% comment %} <img src="{% static 'img/logo.png' %}" alt="Logo of this website"> {% endcomment %}
+            <h1>Perfume Shop</h1>
+        </div>
+        <div class="login_register">
+            {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}" class="logout">Log Out</a>
+                <a href="" class="welcome">Welcome, {{user.username|title}}</a>
+            {% else %}
+                <h3 class="login"><a href="{% url 'login' %}">Login</a></h3>
+                <h3 class="register"><a href="{% url 'register' %}"> Register</a></h3>
+            {% endif %}
+        </div>
+    </header>
+    <div class="post-entry">
+        <h2>{{object.title}}</h2>
+        <p>{{object.body}}</p>
+    </div>
+    {% if user.is_authenticated %}
+        <p> <a href="{% url 'post_edit' post.pk %}"> Edit blog </a>
+        <p> <a href="{% url 'post_delete' post.pk %}"> Delete blog </a>
+    {% endif %}
+
+<hr>
+    <a href="{%url 'home'%}">go to home</a>
+    <div class="footer" id="footer">
+        <div class="name">
+            <h3>Parfume Shop</h3>
+        </div>
+        <div class="social">
+            <ul>
+                {% comment %} <li><a href=""><img src="{% static 'img/facebook.webp' %}" alt="facebook-logo"></a></li>
+                <li><a href="https:/www.instagram.com/reos_parfum" target="_blank"><img src="{% static 'img/instagram.png' %}" alt="instagram-logo"></a></li>
+                <li><a href=""><img src="{% static 'img/twitter.jpg' %}" alt="twitter-logo"></a></li>
+                <li><a href=""><img src="{% static 'img/gmail.png' %}" alt="gmail-logo"></a></li> {% endcomment %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django blog</title>
+    <link rel="stylesheet" href="{% static 'css/base.css'%}">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="{% url 'home' %}">Django blog</a>
+        </h1>
+
+        {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}">Log Out</a>
+            <a href="">Welcome {{user.username}}</a>
+        {% else %}
+            <a href="{% url 'register' %}">Register</a>       
+            <a href="{% url 'login' %}">LogIn </a>
+
+        {% endif %}
+    </header>    
+    {% if user.is_authenticated %}
+        <a href="{% url 'post_yeni' %}">+New post</a>
+    {% endif %}
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html> -->

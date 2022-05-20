@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | My site</title>
+    <link rel="stylesheet" href="{% static 'account/register.css' %}">
+    {% comment %} for mobile {% endcomment %}
+    <link rel="stylesheet" media="(max-width: 500px)" href="{% static 'css/mobile.css' %}">
+    {% comment %} for tablet {% endcomment %}
+    <link rel="stylesheet" media="(max-width: 768px)" href="{% static 'css/tablet.css' %}">
+</head>
+
+<body>
+    <header id="home">
+        <div class="logo">
+            <img src="{% static 'img/logo.png' %}" alt="Logo of this website">
+            <a href="{% url 'home' %}" style="text-decoration: none; color: black" title="Home Page">
+                <h1 class="go_home">Perfume Shop</h1>
+            </a>
+        </div>
+    </header>
+
+    <h2>Register</h2>
+    <hr>
+    <div class="registerpage">
+        <div class="container">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {% if error %}
+                <div class="alert">
+                    {{error}}
+                </div>
+                {% endif %}
+                {% comment %} <label for="username" class="form-label">Username</label> {% endcomment %}
+                <input type="text" class="form-control" name="username" placeholder="username" value="{{ username }}">
+                {% comment %} <label for="email" class="form-label">Email</label> {% endcomment %}
+                <input type="email" class="form-control" name="email" placeholder="email" value="{{ email }}">
+                {% comment %} <label for="firstname" class="form-label">Firstname</label> {% endcomment %}
+                <input type="text" class="form-control" name="firstname" placeholder="firstname" value="{{ firstname }}">
+                {% comment %} <label for="lastname" class="form-label">Lastname</label> {% endcomment %}
+                <input type="text" class="form-control" name="lastname" placeholder="lastname" value="{{ lastname }}">
+                {% comment %} <label for="password" class="form-label">Password</label> {% endcomment %}
+                <input type="password" class="form-control" name="password" placeholder="password">
+                {% comment %} <label for="repassword" class="form-label">Password Confirm</label> {% endcomment %}
+                <input type="password" class="form-control" name="repassword" placeholder="password again">
+                <input type="submit" value="Register" class="btn" />
+            </form>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="{% url 'login' %}">Do you have an account? Login.</a>
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="name">
+                <h3>Parfume Shop</h3>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href=""><img src="{% static 'img/facebook.webp' %}" alt="facebook-logo"></a></li>
+                    <li><a href="https:/www.instagram.com/reos_parfum" target="_blank"><img src="{% static 'img/instagram.png' %}" alt="instagram-logo"></a></li>
+                    <li><a href=""><img src="{% static 'img/twitter.jpg' %}" alt="twitter-logo"></a></li>
+                    <li><a href=""><img src="{% static 'img/gmail.png' %}" alt="gmail-logo"></a></li>
+                </ul>
+            </div>
+        </div>
+        
+</body>
+
+</html>

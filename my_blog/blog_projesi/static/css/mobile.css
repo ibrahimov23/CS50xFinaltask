@@ -1,0 +1,89 @@
+header {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: crimson;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+
+.logo h1 {
+    padding-top: 30px;
+    font-family:'Courier New', Courier, monospace;
+} 
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content:flex-end;
+    justify-content: space-between;
+    background-color:coral;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 20px 20px;
+}
+
+.navbar  ul li a {
+    margin-right: 0px;
+}
+
+.inner h2 {
+    font-size: 40px;
+}
+
+.slide .inner {
+    top: 20px;
+    left: 20px;
+}
+
+.inner p{
+    font-size: 30px;
+}
+
+.slider {
+    height: 500px;
+}
+
+.indicators .left{
+    top: 500px;
+    left: 5px;
+}
+
+.indicators .right{
+    top: 500px;
+    right: 5px;
+}
+
+.blogs {
+    width: 50%;
+}
+
+.footer {
+    padding: 40px 20px;
+}
+
+.footer .social img {
+    width: 20px;
+}
+
+.products .container {
+    width: 100%;
+}
+
+.products .container .box {
+    width: 100%;
+}
+
+
+.products .container .box .box-img img{
+    width: 100%;
+}
+
+.products .container .box {
+    width: 100%;
+}
